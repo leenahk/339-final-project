@@ -1,0 +1,599 @@
+
+/*----------------------------*/
+/* Styling for mobile view */
+/* Across page styling*/
+/*----------------------------*/
+
+/*Skip to content link*/
+a.skip{
+    background: #ffffff;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -70px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    margin: 34px;
+    margin-top: 25px;
+}
+a.skip:focus{
+    top:20px;
+    color: black;
+}
+  *:focus{
+    border: 2px solid black;
+    text-decoration: none;
+}
+.link{
+    margin: 50px;
+}
+
+/*Navigation*/
+header{
+    background: #86868e;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+img#logo{
+    width: 200px;
+    padding-top: 20px;
+   
+    
+}
+li.nav_item a{
+    margin-bottom: 20px;
+}
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+}
+.nav_links a:hover{
+    text-decoration: underline;
+}
+.nav_item a{
+    margin: 30px;
+}
+li a.active{
+    text-decoration: underline;
+}
+nav{
+    position: relative;
+    position: sticky;
+}
+#navbar {
+    overflow: hidden;
+    background-color: #86868e;
+} 
+#navbar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+} 
+#navbar a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+#navbar a.active {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+#navbar .nav_links{
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+} 
+
+.content {
+    padding: 16px;
+} 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+body{
+    background: rgb(255, 255, 255);
+    font-family: 'DM Serif Display', sans-serif;
+    color:rgb(0, 0, 0);
+    text-align: center;
+
+
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: sans-serif; */
+}
+h1{
+    font-size: 50px;
+    margin: 35px;
+}
+h2{
+    text-align: center;
+    margin: 0px 10px 10px 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.page img{
+    width: 100%;
+    opacity: .9;
+    justify-self: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/*----------------------------*/
+/*Styling for Home page*/
+/*----------------------------*/
+
+.home h1{
+    margin: 20px 20px 15px 20px;
+    
+}
+.home{
+    border: solid #000000 5px;
+    border-radius: 10px;
+    margin: 40px 70px 40px 70px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.home p{
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+    color:#000000;
+    font-size: 20px;
+}
+.home img{
+    padding: 0px 30px 10px 30px;
+    width: 90%;
+}
+div.page{
+    width: 100%;
+}
+
+
+/*----------------------------*/
+/*Styling for Music page*/
+/*----------------------------*/
+.info{
+    display: flex;
+    grid-template-columns: auto;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+.info h1{
+    margin: 20px;
+}
+.info img{
+    width: 50%;
+    /* border: solid rgb(255, 255, 255) 5px; */
+    border-radius: 10px;
+    margin: auto auto;
+    
+}
+.text{
+    width: 50%;
+    border: solid black 5px;
+    border-radius: 5px;
+    margin: auto auto;
+
+    /* margin: 30px 120px 30px 120px;
+    padding: 20px;
+    font-size: 20px; */
+}
+.text p{
+    margin: 25px;
+    font-size: 30px;
+}
+
+/* AM tracks*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.gallery a{
+    width: 40%; 
+    border:rgb(0, 0, 0)
+}
+.gallery img{
+    border:solid rgb(0, 0, 0) 3px;
+    border-radius: 5px;
+}
+.gallery img:hover{
+    transform: scale(1.05);
+}
+.gallery a:focus{
+    transform: scale(1.05);
+}
+
+.preview{
+    display: grid;
+    grid-template-columns: auto;
+}
+div.preview{
+    margin-top: 0px;
+}
+
+figure{
+    padding: 10px;
+
+}
+figcaption{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.preview figure:hover{
+    transform: scale(1.05);
+}
+h1.preview-header {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+/*----------------------------*/
+/*Styling for Members page*/
+/*----------------------------*/
+
+.member{
+    display: grid;
+    
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+    
+}
+.member h1{
+    border: solid black 5px;
+    padding: 40px;
+    margin: 20px;
+    grid-column: 1/-1;
+    
+}
+.member p{
+    padding: 20px;
+    grid-column: 1/-1;
+}
+.member-pic{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.member-pic img:last-child{
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 50%;
+}
+/* .member-pics{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+.member-pics img:last-child{
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 60%;
+} */
+
+
+/* div.member-pics:last-child{
+    display: none;
+} */
+
+/*----------------------------*/
+/*Queries*/
+/*----------------------------*/
+
+/* Animation */
+img#logo{
+    animation: grow 5s;
+}
+@keyframes grow {
+    0%{
+        opacity: 0;
+        width: 25px;
+    }
+    
+    100%{
+        opacity: 1;
+        width: 200px;
+    }
+}
+/*----------------------------*/
+/* Media Queries */
+/*----------------------------*/
+
+/* If user prefers reduces motion */
+@media(prefers-reduced-motion){
+    img#logo, a.skip{
+        animation: none;
+    }
+    
+
+}
+
+/* Styling for tablet view */
+@media screen and (min-width: 800px){
+    /*----------------------------*/
+    /* General */
+    /*----------------------------*/
+    img#logo{
+        animation: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+    }
+    #navbar a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+    } 
+    img#logo{
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    header{
+        justify-content: center;
+        gap: 40px;
+    }
+    /*----------------------------*/
+    /*Home page*/
+    /*----------------------------*/
+    .beginnings img, .now img{
+        width: 110%;
+    }
+    .home{
+
+        border: none
+    }
+    .home h1, .home p{
+        text-align: start;
+    }
+    
+    .beginnings, .now{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+    .beginnings h1, .now h1{
+        grid-column: 1/-1;
+    }
+
+    .beginnings img, .now img{
+        width: 100%;
+        grid-row: 2;
+        grid-column: 2/3;
+    }
+    .now img{
+        grid-column: 1/2;
+    }
+    .beginnings p .now p{
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+   
+    .about h1{
+        text-align: center;
+    }
+    .about{
+        margin-bottom: 60px;
+    }
+    .about p{
+        text-align: center;
+    }
+
+    
+    /*----------------------------*/
+    /*Members page*/
+    /*----------------------------*/
+    .member{
+        grid-template-columns: 1fr 2fr;
+        padding: 20px 20px 20px 20px;
+        align-items: center;
+    }
+    .member h1{
+        grid-column: 1/2;
+    }
+    .member p{
+        grid-column: 2/4;
+    }
+
+    .member-pic{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    
+    .member-pic img:last-child{
+        grid-column: 3/4;
+        grid-row: 1;
+        width: 100%;
+    }
+    /*----------------------------*/
+    /* Music Page */
+    /*----------------------------*/
+    .info{
+        flex-direction: row-reverse;
+        margin-right: 50px;
+        margin-left: 50px;
+       
+    }
+    .info p{
+        font-size: 30px;
+    }
+    /* AM Tracks */
+    .gallery{
+        grid-template-columns: auto auto auto;  
+    }
+    .gallery a:nth-child(11){
+        width: 100%;
+        grid-column: 2/3;
+    }
+    .album{
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 30px 30px 30px 30px;
+        padding-top: 30px;
+        gap: 20px;
+    }
+    .album div{
+        font-size: 40px;
+    }
+    .album img{
+        width: 50%;
+    }
+    /* Previews */
+    .preview{
+        grid-template-columns: auto auto;
+        /* grid-gap: 5px; */
+        justify-content: center;
+    }
+    
+    .preview h1{
+        grid-column: 1/3;
+    
+    }
+    .preview figure:last-child{
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+    .gallery a{
+        width: 20%; 
+    }
+    .gallery a:last-child{
+        width: 20%;
+    }
+    
+
+
+    
+/* Styling for desktop view */
+
+@media screen and (min-width: 1020px){
+    /*----------------------------*/
+    /* General */
+    /*----------------------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        text-align: start;
+        margin-top: 50px;
+    }
+    .text h1{
+        text-align: center;
+        margin: 10px;
+        font-size: 80px;
+    }
+    /*----------------------------*/
+    /*Home page*/
+    /*----------------------------*/
+    .beginnings, .now{
+        display: block;
+    }
+    .beginnings img, .now img{
+        width: 40%;
+    }
+    .about p, .beginnings p, .now p{
+        text-align: start;
+    }
+    .home{
+        margin: 100px;
+        margin-top: 10px;
+        border: none;
+    }
+    .home h1{
+        border: solid black 5px;
+        padding: 10px;
+        text-align: center;
+        margin: 35px;
+    }
+
+
+    
+    /*----------------------------*/
+    /* Members Page */
+    /*----------------------------*/
+    .member h1, .member p{
+        grid-column: 1/-1;
+    }
+    .member h1{
+        text-align: center;
+    }
+    .member p{
+        font-size: 30px;
+    }
+    .member, .member-pic{
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+    .member-pic{
+        grid-gap: 10px;
+        background-color:  rgb(255, 255, 255);
+    }
+
+    /*----------------------------*/
+    /* Music Page */
+    /*----------------------------*/
+    
+    /* AM Tracks */
+    .gallery a{
+    flex: 0 0 calc(20% - 70px);
+    }
+    .text{
+        width: 35%;
+        gap: 0px;
+
+    }
+    .info img{
+        width: 35%;
+    }
+   
+
+    /* Previews */
+    .preview{
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+    .preview figure:last-child{
+        grid-row: 1;
+        grid-column: 3/4;
+
+    }
+    
+   
+
+}}
