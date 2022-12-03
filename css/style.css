@@ -179,14 +179,14 @@ div.page{
     grid-template-columns: auto;
     flex-direction: column;
     gap: 20px;
-    margin-top: 30px;
 }
+
 .info h1{
-    margin: 20px;
+    font-size: 100px;
+    margin: 10px;
 }
 .info img{
     width: 50%;
-    /* border: solid rgb(255, 255, 255) 5px; */
     border-radius: 10px;
     margin: auto auto;
     
@@ -427,13 +427,22 @@ img#logo{
     /* Music Page */
     /*----------------------------*/
     .info{
-        flex-direction: row-reverse;
-        margin-right: 50px;
-        margin-left: 50px;
-       
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 100px;
+    }
+    
+    div.text{
+        width: 100%;
+    }
+    .info h1{
+        grid-column: 1/-1;
     }
     .info p{
-        font-size: 30px;
+        font-size: 28px;
+    }
+    .info img{
+        width: 100%;
     }
     /* AM Tracks */
     .gallery{
@@ -445,7 +454,6 @@ img#logo{
     }
     .album{
         flex-wrap: nowrap;
-        flex-direction: row-reverse;
         align-items: center;
         margin: 30px 30px 30px 30px;
         padding-top: 30px;
@@ -489,9 +497,7 @@ img#logo{
     /* General */
     /*----------------------------*/
     header {
-        display: flex;
         justify-content: space-between;
-        flex-direction: row;
     }
     .nav_links{
         flex-direction: row;
@@ -565,11 +571,29 @@ img#logo{
         gap: 0px;
 
     }
-    .info img{
-        width: 35%;
+    .text{
+    width: 100%;
+    grid-column: 1/-1;
     }
-   
-
+    .info{
+        margin: 150px;
+        margin-bottom: 0px;
+        margin-top: 50px;
+        align-items: center;
+    }
+    .info h1{
+    grid-column: 1/2;
+    font-size:150px;
+    }
+    .info p{
+    font-size: 30px;
+    text-align: center;
+    }
+    .info img{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1;
+    }
     /* Previews */
     .preview{
         grid-template-columns: auto auto;
