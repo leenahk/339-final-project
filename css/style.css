@@ -32,7 +32,6 @@ a.skip:focus{
 /*Navigation*/
 header{
     background: #86868e;
-    display: flex;
     align-content: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -47,12 +46,14 @@ img#logo{
 li.nav_item a{
     margin-bottom: 20px;
 }
+
 .nav_links{
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
     
 }
+
 .nav_links a:hover{
     text-decoration: underline;
 }
@@ -133,8 +134,25 @@ footer{
     background-color: black;
     color: white;
     padding: 30px;
-    text-align: center;
+    text-align: start;
+    font-size: 20px;
 }
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+div.resources{
+    padding-top: 5px;
+    font-size: 17px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer a:focus{
+    text-decoration: underline;
+}
+
+
 
 /*----------------------------*/
 /*Styling for Home page*/
@@ -260,6 +278,10 @@ h1.preview-header {
     align-items: center;
     
 }
+.member-pic{
+    display: grid;
+    grid-template-columns: auto auto;
+}
 .member h1{
     border: solid black 5px;
     padding: 40px;
@@ -270,33 +292,16 @@ h1.preview-header {
 .member p{
     padding: 20px;
     grid-column: 1/-1;
+    font-size: 20px;
 }
-.member-pic{
-    display: grid;
-    grid-template-columns: auto auto;
-}
+
 
 .member-pic img:last-child{
     grid-column: 1/-1;
     justify-self: center;
     width: 50%;
 }
-/* .member-pics{
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-content: center;
-}
-.member-pics img:last-child{
-    grid-column: 1/-1;
-    justify-self: center;
-    width: 60%;
-} */
 
-
-/* div.member-pics:last-child{
-    display: none;
-} */
 
 /*----------------------------*/
 /*Queries*/
@@ -345,7 +350,6 @@ img#logo{
         flex-direction: row;
     }
     .nav_links{
-        display: flex;
         flex-direction: row;
     }
     #navbar a {
@@ -505,7 +509,6 @@ img#logo{
         flex-direction: row;
     }
     .nav_links{
-        display: flex;
         flex-direction: row;
     }
     h1{
