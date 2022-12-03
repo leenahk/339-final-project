@@ -572,9 +572,9 @@ img#logo{
     /*----------------------------*/
     
     /* AM Tracks */
-    /* .gallery a{
+    .gallery a{
     flex: 0 0 calc(20% - 70px);
-    } */
+    }
     /* .text{
         width: 35%;
         gap: 0px;
