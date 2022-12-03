@@ -54,9 +54,6 @@ li.nav_item a{
     
 }
 
-.nav_links a:hover{
-    text-decoration: underline;
-}
 .nav_item a{
     margin: 30px;
 }
@@ -77,10 +74,7 @@ nav{
     text-decoration: none;
     font-size: 25px;
 } 
-#navbar a:hover {
-    color: #ffffff;
-}
-#navbar a:focus {
+#navbar a:hover,#navbar a:focus {
     color: #ffffff;
 }
 #navbar a.active {
@@ -96,14 +90,7 @@ nav{
 .content {
     padding: 16px;
 } 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.sticky + .content {
-    padding-top: 60px;
-}
+
 body{
     background: rgb(255, 255, 255);
     font-family: 'DM Serif Display', sans-serif;
@@ -246,6 +233,7 @@ div.page{
     display: grid;
     grid-template-columns: auto;
 }
+
 div.preview{
     margin-top: 0px;
 }
@@ -259,9 +247,6 @@ figcaption{
     margin-top: 15px;
 }
 
-.preview figure:hover{
-    transform: scale(1.05);
-}
 h1.preview-header {
     margin-top: 50px;
     margin-bottom: 0px;
