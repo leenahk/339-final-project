@@ -187,7 +187,6 @@ div.page{
 /*----------------------------*/
 .info{
     display: flex;
-    grid-template-columns: auto;
     flex-direction: column;
     gap: 20px;
 }
