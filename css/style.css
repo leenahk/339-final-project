@@ -469,7 +469,6 @@ img#logo{
     /* Previews */
     .preview{
         grid-template-columns: auto auto;
-        /* grid-gap: 5px; */
         justify-content: center;
     }
     
@@ -566,16 +565,7 @@ img#logo{
     /* AM Tracks */
     .gallery a{
     flex: 0 0 calc(20% - 70px);
-    } */
-    /* .text{
-        width: 35%;
-        gap: 0px;
-
     }
-    /* .text{
-    width: 100%;
-    grid-column: 1/-1;
-    } */
     .info{
         
         align-items: end;
@@ -608,7 +598,5 @@ img#logo{
         grid-column: 3/4;
 
     }
-    
-   
 
 }}
