@@ -11,13 +11,11 @@ a.skip{
     padding: 6px;
     position: absolute;
     top: -200px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
     z-index: 1;
     margin: 34px;
     margin-top: 25px;
     font-size: 20px;
-    border: solid black 5px;
+    border: solid black 3px;
     border-radius: 5px;
 }
 a.skip:focus{
@@ -25,10 +23,10 @@ a.skip:focus{
     color: black;
 }
   *:focus{
-    border: 2px solid black;
     text-decoration: none;
 
 }
+
 
 header{
     background: #86868e;
@@ -37,6 +35,7 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
 
 /*Navigation*/
 nav{
@@ -322,7 +321,7 @@ img#logo{
 
 /* If user prefers reduces motion */
 @media(prefers-reduced-motion){
-    img#logo, a.skip{
+    img#logo{
         animation: none;
     }
     
@@ -454,13 +453,6 @@ img#logo{
         width: 100%;
     }
     /* AM Tracks */
-    .gallery{
-        grid-template-columns: auto auto auto;  
-    }
-    .gallery a:nth-child(11){
-        width: 100%;
-        grid-column: 2/3;
-    }
     .album{
         flex-wrap: nowrap;
         align-items: center;
@@ -574,12 +566,12 @@ img#logo{
     /* AM Tracks */
     .gallery a{
     flex: 0 0 calc(20% - 70px);
-    }
+    } */
     /* .text{
         width: 35%;
         gap: 0px;
 
-    } */
+    }
     /* .text{
     width: 100%;
     grid-column: 1/-1;
